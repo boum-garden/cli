@@ -1,0 +1,26 @@
+{
+  "name": "boum-cli",
+  "version": "0.1.0",
+  "description": "Command-line interface for the Boum IoT REST API",
+  "license": "MIT",
+  "bin": {
+    "boum": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  }
+}
